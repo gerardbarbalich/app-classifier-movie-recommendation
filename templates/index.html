@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="https://barbalich.nz">barbalich.nz</a><button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="/static/assets/img/web-crop-gerard-profile.png" alt="" /><!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Let's demo a recommendation engine</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Welcome to this demo of a recommendation engine. Please select a film you like, select submit, and then parouse the recommended films at your leasiure. A detailed description of how this app works can be found below...</p>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                <!-- Select Dropdown-->
+                <form method="post" action="/post_movies">
+
+                    <div class="form-group">
+                        <p>Choose your movie</p>
+                        <select class="form-control" id="movieChoice" name=movieChoice>
+                            <option value="Angels in the Outfield (1994)">Angels in the Outfield (1994)</option>
+                            <option value="Cool Runnings (1993)">Cool Runnings (1993)</option>
+                            <option value="Happy Gilmore (1996)" selected>Happy Gilmore (1996)</option>
+                            <option value="Jumanji (1995)">Jumanji (1995)</option>
+                            <option value="Toy Story (1995)">Toy Story (1995)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>And the number of recommendations you would like</p>
+                        <select class="form-control" id="listSize" name=listSize>
+                                <option value="3">1</option>
+                                <option value="5">5</option>
+                                <option value="8"selected>8</option>
+                                <option value="13">13</option>
+                                <option value="21">21</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p></p>
+                        <!-- <button class="btn btn-default" type="submit">Submit!</button> -->
+                        <button class="btn btn-xl btn-outline-light" type="submit">Submit!</button>
+                    </div>
+                </form>
+            </div>
+        </header>
+        
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead">This is a simple web application that has pulled together several tools. 
+                    The application is written in Python upon a <a href="https://flask.palletsprojects.com">Flask framework</a>. 
+                    It is drawing data from a data loaded in via CSV. 
+                    It is implementing a simple <a href="https://startbootstrap.com/themes/freelancer/">Bootstrap template</a>, alterations have been made to the HTML, CSS, and JavaScript. 
+                    It is also using <a href="https://www.heroku.com/">Heroku</a> as a it's platform as a service.</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p></div>
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead">The full code for this project can be found here - <a href="https://github.com/gerardbarbalich/recommendation-engine-flask-app">link.</a>
+                    </p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section-->
+        <section class="page-section bg-primary text-white mb-0" id="contact">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Contact</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Content-->
+                <div class="row">
+                    <div class="col-lg-12 text-center mr-auto"><p class="lead">Send me an email; gerard [at] barbalich [dot] nz</p></div>
+                </div>
+            </div>
+        </section>
+        </footer>
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © G Barbalich 2020</small></div>
+        </section>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="/static/js/scripts.js"></script>
+    </body>
+</html>

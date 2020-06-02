@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset='utf-8'/>
+    </head>
+    <body>
+        {% for table in names %}
+            {{ table|safe }}
+        {% endfor %}
+
+        <div class="form-group">
+            <p></p>
+            <button class="btn btn-xl btn-outline-light" type="button"><a href="/">Another recommendation...?</a></button>
+        </div>
+    </body>
+</html>
