@@ -1,11 +1,11 @@
 # ignore pickled files
-*.pkl
+#*.pkl
 
 # ignore all input files
-inputs/*
+#inputs/*
 
 # ignore virtual environment files
 venv/
 
 # ignore all .png files
-*.png
+#.png
