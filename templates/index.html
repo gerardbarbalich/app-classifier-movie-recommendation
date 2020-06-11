@@ -37,7 +37,9 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
+                <!--
                 <p class="masthead-subheading font-weight-light mb-0">Welcome to this demo of a recommendation engine. Please select a film you like, select submit, and then parouse the recommended films at your leasiure. A detailed description of how this app works can be found below...</p>
+                -->
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                         <div class="divider-custom-line"></div>
@@ -91,19 +93,63 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-12 text-center ml-auto"><p class="lead">This is a simple web application that has pulled together several tools. 
-                    The application is written in Python upon a <a href="https://flask.palletsprojects.com">Flask framework</a>. 
-                    It is drawing data from a data loaded in via CSV. 
-                    It is implementing a simple <a href="https://startbootstrap.com/themes/freelancer/">Bootstrap template</a>, alterations have been made to the HTML, CSS, and JavaScript. 
-                    It is also using <a href="https://www.heroku.com/">Heroku</a> as a it's platform as a service.</p></div>
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p></div>
-                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p></div>
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p>
+                    </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-lg-12 text-center ml-auto"><p class="lead">The full code for this project can be found here - <a href="https://github.com/gerardbarbalich/recommendation-engine-flask-app">link.</a>
-                    </p></div>
+                    <div class="col-lg-12 text-center ml-auto">
+                        <p class="lead">The full code for this project can be found here - <a href="https://github.com/gerardbarbalich/recommendation-engine-flask-app">link.</a>
+                        </p>
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-12 text-center ml-auto"><p class="lead"></p>
+                    <br>
+                    <br>
+                    <br>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 text-center ml-auto">
+                    <p class="lead">
+                    This is a simple web application that has pulled together several tools. 
+                    The recommendation engine and web application are written in Python. 
+                    The former was designed and built using 'content-based filtering' technique, the <a href="https://grouplens.org/datasets/movielens/">MovieLens dataset</a>, and loads data from stored CSV's.
+                    The latter was built using a <a href="https://flask.palletsprojects.com">Flask framework</a>, and a <a href="https://startbootstrap.com/themes/freelancer/">Bootstrap template</a>.
+                    Alterations were made to the made to the HTML, CSS, and JavaScript of this Bootstrap template. 
+                    <br>
+                    <br>
+                    Once built, the environment packages were frozen into a requirements.txt file. 
+                    A .gitignore file was created to describe the irrelevant files.
+                    A Procfile was created to hold the functions to be run upon loading onto <a href="https://www.heroku.com/">Heroku</a>, the Platform as a Service.
+                    The code was then commited both GitHub and Heroku, and deployed on Heroku. 
+                    Lastly, a custom domain was added to the Heroku hosted web app by altering DNS details. 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    How the statistics works…
+                    <br>
+                    <br>
+                    Content-based Filtering utilises the features of the films, rather than the features of the customer, to make its recommendations. 
+                    Based upon the movie they have just watched, the engine recommends the next most similar movie. 
+                    This is different from Collaborative Filtering, which groups customers based upon the similarities between customers. 
+                    Such an engine would recommend a movie to a customer based upon what similar customers have watched. 
+                    <br>
+                    <br>
+                    Content-based Filtering uses the combination of Term Frequency (TF) and Inverse Document Frequency (IDF) to determine the relative importance of the movies a customer has watched. 
+                    To simplify, we use the TF-IDF method to calculate a Vector Space Model, which is a measure of similarity between movies. 
+                    The number recommended movies is then displayed based upon this measure of similarity and the customer’s input. 
+                    <br>
+                    <br>
+                    A full breakdown of the math, which includes phrases like Cosine Similarity, TF-IDF Vectorizer, a Dot Product, can be found <a href="https://towardsdatascience.com/the-4-recommendation-engines-that-can-predict-your-movie-tastes-109dc4e10c52">here</a>. 
+                </p>
+                </div>
                 </div>
             </div>
         </section>
